@@ -79,7 +79,7 @@ if check_password():
                     str1="http://bulkwhatsapp.live/wapp/api/send?apikey=952ab4e4144d4dd7b729f7251e89c855&mobile="
                     str2=str(x[5])
                     str3="&msg=""\"Dear Parent,  %0a Your son or daughter :"
-                    str5=str(x[0])
+                    str5=str(x[0]+"("+x[1]+")")
                     str6=", College fees due amount is:"
                     str7=str(x[3])
                     str8="  %0a for the First year  please clear the due amount on or before 05-05-2022. %0a Principal , %0a  SWARNANDHRA COLLEGE OF ENGINEERING AND TECHNOLOGY.  %0a Thank you\""
