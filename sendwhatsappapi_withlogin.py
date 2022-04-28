@@ -78,11 +78,11 @@ if check_password():
                 for index,x in data.iterrows():
                     str1="http://bulkwhatsapp.live/wapp/api/send?apikey=952ab4e4144d4dd7b729f7251e89c855&mobile="
                     str2=str(x[5])
-                    str3="&msg=""\"Dear Parent, Your son or daughter"
+                    str3="&msg=""\"Dear Parent,  %0a Your son or daughter :"
                     str5=str(x[0])
-                    str6="college fees due amount is"
+                    str6=", College fees due amount is:"
                     str7=str(x[3])
-                    str8="<br>for the Final year  please clear the due amount on or before 30-4-2022. %0a Principal , SWARNANDHRA COLLEGE OF ENGINEERING AND TECHNOLOGY.Thank you\""
+                    str8="  %0a for the First year  please clear the due amount on or before 05-05-2022. %0a Principal , %0a  SWARNANDHRA COLLEGE OF ENGINEERING AND TECHNOLOGY.  %0a Thank you\""
                     result=str1+str2+str3+str5+str6+str7+str8
                     #print(result)
                     res = requests.get(result)
